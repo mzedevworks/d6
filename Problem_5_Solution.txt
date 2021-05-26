@@ -1,0 +1,14 @@
+1. My value: 3
+2. There must be a value for each iteration of the loop by calling the function. This is caused by the fact that functions are stored differently from variables and when we use the send loop we are getting to the last function stored.
+3. Do teh call in the same loop.
+
+ <script>
+var funcs = [];
+
+for (var i = 0; i < 3; i++) {
+    funcs[i] = function() { 
+		console.log("My value: " + i); 
+	};
+	funcs[i]();
+}
+</script>

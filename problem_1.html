@@ -1,0 +1,25 @@
+<!-- Type -->
+<label for="cars">Choose a type:</label>
+<select id="d1">
+</select>
+
+<!-- Group -->
+<select id="d2">
+</select>
+
+<!-- Items -->
+<select id="d3">
+</select>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// Start Here
+		$.get("problem_1.php", function(data, status){
+		  alert("Data: " + data + "\nStatus: " + status);
+		});
+		
+		
+		
+	});
+</script>
